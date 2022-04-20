@@ -1,0 +1,62 @@
+$main-color:rgb(121, 66, 69);
+$light-color: rgb(221, 183, 149);
+$font: lexend;
+*{
+    margin: 0;
+    padding: 0;
+}
+.border{
+    padding-top: 13%;
+}
+main{
+    div{
+        h2{
+        color: $main-color;
+        font-family: $font;
+        animation: zoomIn;
+        animation-duration: 1s;
+        }
+        div{
+            .producto{
+                border: solid 2px $main-color;
+            }
+            .display1{
+                animation: fadeInLeft;
+                animation-duration: 1s;
+            }
+            .display2{
+                animation: fadeInRight;
+                animation-duration: 1s;
+            }
+            h3{
+                font-weight: bold; 
+                color: $main-color;
+                font-family: $font;
+                animation: zoomIn;
+                animation-duration: 1s;
+            }
+            ol{
+                color:dimgray;
+                font-family: $font;
+                font-size: 95%;
+                line-height: 220%;
+                animation: zoomIn;
+                animation-duration: 1s;
+            }
+        }
+        h4{
+            background-color: $main-color;
+            color: $light-color;
+            font-family: $font;
+            line-height: 200%;
+            font-size: 100%;
+            animation: zoomIn;
+            animation-duration: 1s;
+        }
+    }
+}
+@media screen and (max-width:767px){
+    .border{
+        padding-top: 55%;
+    }
+}

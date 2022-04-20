@@ -1,0 +1,58 @@
+ul{
+    font-family: "lexend";
+    background-color:rgb(225, 206, 178);
+    color:rgb(121, 66, 69);
+    font-weight:bolder;
+    line-height: 50px;
+    font-size: 110%;
+    z-index: 3;
+    ul{
+        position: absolute;
+        display: none;
+        li{
+            &:hover{
+                background-color: rgb(180, 154, 127);
+            }
+        }
+    }
+    li{
+        position: relative;
+        &:hover ul{
+            display: block;
+        }
+        a{
+            color:rgb(121, 66, 69);
+            text-decoration: none;
+            }
+    }
+    .header__productos{
+        li{
+        display: block;
+        background-color:rgb(221, 183, 149);
+        color: rgb(121, 66, 69);
+        font-size: 100%;
+        width: 180%;
+        padding: 10% 10% 10% 10%;
+        margin-left: -20%;
+        z-index: 4;
+        transition: background-color 0.25s;
+            }
+    }
+    .header__recetas{
+        li{
+        display: block;
+        background-color:rgb(221, 183, 149);
+        color: rgb(121, 66, 69);
+        font-size: 100%;
+        width: 200%;
+        padding: 10% 10% 10% 10%;
+        margin-left: -20%;
+        z-index: 4;
+        transition: background-color 0.25s;
+            }
+    }
+    
+}
+#color{
+    color:rgb(121, 66, 69);
+}
